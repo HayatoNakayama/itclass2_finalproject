@@ -39,8 +39,30 @@ li {
   float: left;
 }
 
+.top_contents {
+  background-image: url(street.jpg);
+  background-size: cover;
+  height: 700px;
+  text-align: center;
+  color: white;
+}
+
+.btn_contents {
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 10%;
+}
+
+.btn_contents a {
+  display: inline-block;
+  padding: 8px 28px;
+  background-color: black;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
 .footer {
-  background-color: #000033;
+  background-color: black;
   color: #fff;
   height: 200px;
   padding: 20px;
