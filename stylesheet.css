@@ -10,12 +10,21 @@ li {
   background-color: #000000;
   color: #fff;
   height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+#headerLogo {
+  text-decoration: none;
 }
 
 .page_title {
   float: left;
   font-family: arial;
   font-weight: 800;
+  cursor: pointer;
 }
 
 .list {
@@ -32,6 +41,11 @@ li {
   color: #fff;
   display: inline-block;
   font-size: 12px;
+  cursor: pointer;
+}
+
+.list a:hover {
+  opacity: 0.6;
 }
 
 .page_title {
@@ -90,6 +104,16 @@ li {
   width: 80%;
 }
 
+.buy_btn {
+  padding: 8px 28px;
+  color: white;
+  background-color: black;
+  opacity: 0.8;
+  font-weight: 500;
+  margin: 10px;
+  cursor: pointer;
+}
+
 .sell_contents{
   text-align: center;
 }
@@ -101,7 +125,8 @@ li {
 .sell_form {
   display: block;
   display: flex;
-  margin: 0px 40px;
+  margin: 0px 40px 50px 50px;
+  background-color: #d3d3d3;
 }
 
 .sell_form_left {
@@ -112,10 +137,20 @@ li {
 .sell_form_right {
   width: 50%;
   float: right;
+  position: relative;
 }
 
 #exhibit_btn {
+  position: absolute;
+  display: block;
+  bottom: 20px;
+  right: 27%;
+  color: white;
 
+  padding: 8px 28px;
+  background-color: black;
+  opacity: 0.8;
+  font-weight: 500;
 }
 
 .footer {
@@ -136,4 +171,13 @@ li {
 
 .footer-list li {
   padding-bottom: 20px;
+}
+
+.a_btn {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.a_btn:hover {
+  opacity: 1;
 }
