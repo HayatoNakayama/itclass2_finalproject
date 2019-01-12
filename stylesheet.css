@@ -12,10 +12,10 @@ li {
   height: 50px;
 }
 
-.YAMATOWN {
+.page_title {
   float: left;
-  font-size: 36px;
-  padding: 20px 40px;
+  font-family: arial;
+  font-weight: 800;
 }
 
 .list {
@@ -59,6 +59,63 @@ li {
   background-color: black;
   opacity: 0.9;
   font-weight: 500;
+}
+
+.buy_contents {
+  padding-top: 20px;
+}
+
+.contents_title {
+  font-size: 40px;
+  font-family: arial black;
+  padding: 10px 0px 40px 35px;
+  display: block;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  float: left;
+  width: 25%;
+  text-align: center;
+  border: solid 2px #000000;
+  margin: 10px 20px;
+}
+
+.product img {
+  width: 80%;
+}
+
+.sell_contents{
+  text-align: center;
+}
+
+.sell_contents a {
+  text-align: left;
+}
+
+.sell_form {
+  display: block;
+  display: flex;
+  margin: 0px 40px;
+}
+
+.sell_form_left {
+  width: 50%;
+  float: left;
+}
+
+.sell_form_right {
+  width: 50%;
+  float: right;
+}
+
+#exhibit_btn {
+
 }
 
 .footer {

@@ -32,12 +32,61 @@
       </div>
 
       <div class="buy_contents">
-        <a>買う</a>
-
+        <a class="contents_title">BUY</a>
+        <div class="products">
+          <div class="product">
+            <img src="https://stockx.imgix.net/products/streetwear/Extra-Butter-The-North-Face-Nightcrawlers-Nuptse-Jacket-Multi.png?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1544487387">
+            <p>Extra Butter x TNF Nuptse</p>
+            <p>70,000yen</p>
+            <input type="button" class="input_button" value="BUY" onclick="buy1();"　alt="Extra Butter x TNF Nuptse">
+          </div>
+          <div class="product">
+            <img src="https://stockx-360.imgix.net/Air-Jordan-1-Retro-High-Union-Los-Angeles-Black-Toe/Images/Air-Jordan-1-Retro-High-Union-Los-Angeles-Black-Toe/Lv2/img01.jpg?auto=format,compress&w=1117&q=90&updated_at=1544832311">
+            <p>Jordan 1 Retro High Union Los Angeles Black Toe</p>
+            <p>74,000yen</p>
+            <input type="button" class="input_button" value="BUY" onclick="buy1();"　alt="Jordan 1 Retro High Union Los Angeles Black Toe">
+          </div>
+          <div class="product">
+            <img src="https://stockx.imgix.net/products/streetwear/Kith-Team-Williams-Hoodie-Heather-Grey.png?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1545854250">
+            <p>Kith Team Williams Hoodie Heather Grey</p>
+            <p>25,000yen</p>
+            <input type="button" class="input_button" value="BUY" onclick="buy1();"　alt="Kith Team Williams Hoodie Heather Grey">
+          </div>
+          <div class="product">
+            <img src="https://stockx.imgix.net/products/streetwear/Supreme-Cat-in-the-Hat-Tee-White.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1544710989">
+            <p>Supreme Cat in the Hat Tee White</p>
+            <p>7,000yen</p>
+            <input type="button" class="input_button" value="BUY" onclick="buy1();"　alt="Supreme Cat in the Hat Tee White">
+          </div>
+          <div class="product">
+            <img src="https://stockx.imgix.net/products/streetwear/Kith-Classic-Logo-Knit-Beanie-Black.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1544817879">
+            <p>Kith Classic Logo Knit Beanie Black</p>
+            <p>7,500yen</p>
+            <input type="button" class="input_button" value="BUY" onclick="buy1();"　alt="Kith Classic Logo Knit Beanie Black">
+          </div>
+          <div class="product">
+            <img src="https://stockx.imgix.net/products/streetwear/Supreme-Steiff-Bear-Heather-Grey.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1545312775">
+            <p>Supreme Steiff Bear Heather Grey</p>
+            <p>28,500yen</p>
+            <input type="button" class="input_button" value="BUY" onclick="buy1();"　alt="Supreme Steiff Bear Heather Grey">
+          </div>
+        </div>
       </div>
       <div class="sell_contents">
-        <a>売る</a>
-
+        <a class="contents_title">Sell</a>
+        <div class="sell_form">
+          <div class="sell_form_left">
+            <p>商品名</p>
+            <p><input type="text" placeholder="商品名(必須)" required></p>
+            <p>価格</p>
+            <p><input type="number" placeholder="価格(必須)" required></p>
+          </div>
+          <div class="sell_form_right">
+            <p>商品画像</p>
+            <input type="file" required>
+            <a id="exhibit_btn">出品</a>
+          </div>
+        </div>
       </div>
     </div>
 
