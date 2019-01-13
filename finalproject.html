@@ -5,6 +5,8 @@
     <title>Save X(仮)</title>
     <script type="text/javascript" src="js.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   </head>
   <body link="#ffffff" vlink="#ffffff">
 
@@ -27,7 +29,7 @@
           <a class="btn_buy a_btn" href="#jump-buy">買う</a>
           <a class="btn_sell a_btn" href="#jump-sell">売る</a>
           <p>or login</p>
-          <a class="btn_login a_btn">ログイン</a>
+          <a class="btn_login a_btn" id="login-show">ログイン</a>
         </div>
       </div>
 
@@ -75,18 +77,36 @@
       <div class="sell_contents" id="jump-sell">
       <div class="sell_contents">
         <a class="contents_title">Sell</a>
-        <div class="sell_form">
-          <div class="sell_form_left">
-            <p>商品名</p>
-            <p><input type="text" placeholder="商品名(必須)" required></p>
-            <p>価格</p>
-            <p><input type="number" placeholder="価格(必須)" required></p>
+        <form>
+          <div class="sell_form">
+            <div class="sell_form_left">
+              <p>商品名</p>
+              <p><input type="text" placeholder="商品名(必須)" required></p>
+              <p>価格</p>
+              <p><input type="number" placeholder="価格(必須)" required></p>
+            </div>
+            <div class="sell_form_right">
+              <p>商品画像</p>
+              <input type="file" required>
+              <a id="exhibit_btn" class="a_btn">出品</a>
+            </div>
           </div>
-          <div class="sell_form_right">
-            <p>商品画像</p>
-            <input type="file" required>
-            <a id="exhibit_btn" class="a_btn">出品</a>
-          </div>
+        </form>
+      </div>
+
+      <div class="login_form_container" id="login-modal">
+        <div class="close_modal">
+          <a href="#" class="close"></a>
+        </div>
+        <div class="modal">
+          <p id="login-title">Login</p>
+          <form>
+            <p>Name</p>
+            <p><input type="text" id="login-name" placeholder="Name" required></p>
+            <p>Your Birthday</p>
+            <p><input type="date" id="login-birthday" placeholder="Your Birthday"></p>
+            <p><a id="login-btn" class="a_btn">Login</a></p>
+          </form>
         </div>
       </div>
     </div>
@@ -106,5 +126,6 @@
         <p id="copyright">Copyright 2019 71845903 Hayato Nakayama Keio univ. SFC</p>
       </div>
 
+    <script src="jquery.js"></script>
   </body>
 </html>
