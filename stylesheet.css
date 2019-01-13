@@ -192,32 +192,6 @@ li {
   opacity: 1;
 }
 
-.close {
-  position: absolute;
-  right: 32px;
-  top: 32px;
-  width: 32px;
-  height: 32px;
-  opacity: 0.3;
-}
-.close:hover {
-  opacity: 1;
-}
-.close:before, .close:after {
-  position: absolute;
-  left: 15px;
-  content: ' ';
-  height: 33px;
-  width: 2px;
-  background-color: #333;
-}
-.close:before {
-  transform: rotate(45deg);
-}
-.close:after {
-  transform: rotate(-45deg);
-}
-
 .login_form_container {
   position: fixed;
   top: 0;
@@ -233,7 +207,7 @@ li {
   position: absolute;
   top: 20%;
   left: 34%;
-  background-color: #e6ecf0;
+  background-color: #fff;
   padding: 20px 0 40px;
   border-radius: 10px;
   width: 450px;
@@ -259,6 +233,15 @@ li {
   opacity: 1;
 }
 
-.close_modal {
-  position: relative;
+#close-modal {
+  font-size: 13px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#after_login {
+  display: inline-block;
+  padding: 8px 28px;
+  background-color: black;
+  font-weight: 500;
 }
