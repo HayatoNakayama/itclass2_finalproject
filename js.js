@@ -38,7 +38,7 @@ function buyProduct(num) {
     for (var i = 0; i < cart.length; i++) {
       subtotal += cart[i].price;
     }
-    total = subtotal * 1.08;
+    total = Math.round(subtotal * 1.08);
     $('#sum-cart').html('<div class="sum-cart"><p>小計: ¥' + subtotal + '</p><p>合計: ¥' + total +'</p></div>');
   }
 }

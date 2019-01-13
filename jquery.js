@@ -26,7 +26,7 @@ $(function(){
     var month = today.getMonth() + 1;
     var day = today.getDate();
     $('#rewrite').html('<a>' + name + ' さん' + '</a>');
-    $('#rewrite-login').html('<a id="after_login">' + 'こんにちは ' + name + ' さん!' + '</a>');
+    $('#rewrite-login').html('<a id="after_login">' + 'こんにちは ' + name + ' さん！' + '</a>');
     var valbirthday = $('#login-form [name=login-birthday]').val();
     var birthday = Number(valbirthday) || 0;
     var valbirthmonth = $('#login-form [name=login-birthmonth]').val();
@@ -36,6 +36,15 @@ $(function(){
     }
 
     $('#login-modal').fadeOut();
+  });
+
+  //checkout-function
+  $('#checkOut').click(function() {
+    $('#checkOut').html('Please Wait...');
+    $('#checkOut').css({'cursor':'progress','opacity':'0.8'});
+    setTimeout(function() {
+      alert('決済が完了しませんでした。もう一度やり直してください。');
+    },10000);
   });
 
 });

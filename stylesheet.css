@@ -290,3 +290,23 @@ li {
   font-family: arial;
   font-size: 13px;
 }
+
+#map {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.store_contents {
+  padding-bottom: 40px;
+}
+
+.store_contents p {
+  font-style: arial;
+  font-size: 13px;
+  color: #575757;
+  padding-left: 10%;
+}
+
+iframe {
+  width: 80%;
+}
