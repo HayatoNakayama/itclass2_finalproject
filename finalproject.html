@@ -15,8 +15,8 @@
         <ul>
           <li><a href="#jump-buy">BUY</a></li>
           <li><a href="#jump-sell">Sell</a></li>
-          <li><span id="rewrite"><a id="login-show">ログイン</a></span></li>
-          <li><a id="cart-show">買い物かご</a></li>
+          <li><span id="rewrite"><a id="login-show">Login</a></span></li>
+          <li><a id="cart-show">Cart</a></li>
           <li><a href="mailto:t18590hn&#64;sfc.keio.ac.jp">お問い合わせ</a></li>
         </ul>
       </div>
@@ -45,31 +45,31 @@
             <img src="https://stockx-360.imgix.net/Air-Jordan-1-Retro-High-Union-Los-Angeles-Black-Toe/Images/Air-Jordan-1-Retro-High-Union-Los-Angeles-Black-Toe/Lv2/img01.jpg?auto=format,compress&w=1117&q=90&updated_at=1544832311">
             <p>Jordan 1 Retro High Union Los Angeles Black Toe</p>
             <p>74,000yen</p>
-            <input type="button" class="buy_btn" value="BUY" onclick="buy1();"　alt="Jordan 1 Retro High Union Los Angeles Black Toe">
+            <input type="button" class="buy_btn" value="BUY" onclick="buyProduct(1);"　alt="Jordan 1 Retro High Union Los Angeles Black Toe">
           </div>
           <div class="product">
             <img src="https://stockx.imgix.net/products/streetwear/Kith-Team-Williams-Hoodie-Heather-Grey.png?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1545854250">
             <p>Kith Team Williams Hoodie Heather Grey</p>
             <p>25,000yen</p>
-            <input type="button" class="buy_btn" value="BUY" onclick="buy1();"　alt="Kith Team Williams Hoodie Heather Grey">
+            <input type="button" class="buy_btn" value="BUY" onclick="buyProduct(2);"　alt="Kith Team Williams Hoodie Heather Grey">
           </div>
           <div class="product">
             <img src="https://stockx.imgix.net/products/streetwear/Supreme-Cat-in-the-Hat-Tee-White.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1544710989">
             <p>Supreme Cat in the Hat Tee White</p>
             <p>7,000yen</p>
-            <input type="button" class="buy_btn" value="BUY" onclick="buy1();"　alt="Supreme Cat in the Hat Tee White">
+            <input type="button" class="buy_btn" value="BUY" onclick="buyProduct(3);"　alt="Supreme Cat in the Hat Tee White">
           </div>
           <div class="product">
             <img src="https://stockx.imgix.net/products/streetwear/Kith-Classic-Logo-Knit-Beanie-Black.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1544817879">
             <p>Kith Classic Logo Knit Beanie Black</p>
             <p>7,500yen</p>
-            <input type="button" class="buy_btn" value="BUY" onclick="buy1();"　alt="Kith Classic Logo Knit Beanie Black">
+            <input type="button" class="buy_btn" value="BUY" onclick="buyProduct(4);"　alt="Kith Classic Logo Knit Beanie Black">
           </div>
           <div class="product">
             <img src="https://stockx.imgix.net/products/streetwear/Supreme-Steiff-Bear-Heather-Grey.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1545312775">
             <p>Supreme Steiff Bear Heather Grey</p>
             <p>28,500yen</p>
-            <input type="button" class="buy_btn" value="BUY" onclick="buy1();"　alt="Supreme Steiff Bear Heather Grey">
+            <input type="button" class="buy_btn" value="BUY" onclick="buyProduct(5);"　alt="Supreme Steiff Bear Heather Grey">
           </div>
         </div>
       </div>
@@ -113,6 +113,8 @@
         <p class="modal-title">cart</p>
         <span id="cart-contents">
           <p id="default_cart_message">カートには何も商品が入っていません</p>
+        </span>
+        <span id="sum-cart"></span>
         <p><a id="checkOut" class="a_btn">Check out</a></p>
         <p><a id="close-cart" class="a_btn close_modal">Close cart</a></p>
       </div>

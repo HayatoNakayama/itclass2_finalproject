@@ -7,18 +7,38 @@ var products = [
   {name: "Supreme Steiff Bear Heather Grey", price: 28500}
 ];
 
+var cart = [];
+
 class Buy {
   constructor(num) {
-    alert("商品がカートに追加されました！");
+    alert(products[num].name + "がカートに追加されました！");
   }
-  calculate(num) {
-    console.log("calculate成功！");
-    console.log(products[num].price);
-    $('#rewrite').html('<a>SUCCESS!!!</a>');
+  addcart(num) {
+    cart.push(products[num]);
   }
 }
 
 function buyProduct(num) {
   var buy = new Buy(num);
-  buy.calculate(num);
+  buy.addcart(num);
+  if(cart.length > 0) {
+    var showName;
+    var showPrice;
+    for (var i = 0; i < cart.length; i++) {
+      showName = cart[i].name;
+      showPrice = cart[i].price;
+      if(i == 0) {
+        $('#cart-contents').html('<p><a class="producutName">' + showName + '</a>' + '<a class="productPrice">  ¥' + showPrice + '</a></p>');
+      }else {
+        $('#cart-contents').append('<p><a class="producutName">' + showName + '</a>' + '<a class="productPrice">  ¥' + showPrice + '</a></p>');
+      }
+    }
+    var subtotal = 0;
+    var total = 0;
+    for (var i = 0; i < cart.length; i++) {
+      subtotal += cart[i].price;
+    }
+    total = subtotal * 1.08;
+    $('#sum-cart').html('<div class="sum-cart"><p>小計: ¥' + subtotal + '</p><p>合計: ¥' + total +'</p></div>');
+  }
 }

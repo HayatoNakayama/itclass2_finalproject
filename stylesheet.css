@@ -264,7 +264,7 @@ li {
   background-color: #fff;
   padding: 20px 0 40px;
   border-radius: 5px;
-  width: 350px;
+  width: 450px;
   height: auto;
   text-align: center;
 }
@@ -281,4 +281,12 @@ li {
 #default_cart_message {
   font-family: arial;
   font-size: 12px;
+}
+
+.sum-cart {
+  border-top: dashed 1px;
+  text-align: right;
+  padding-right: 8%;
+  font-family: arial;
+  font-size: 13px;
 }
