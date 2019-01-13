@@ -11,6 +11,14 @@ $(function(){
     $('#login-modal').fadeOut();
   });
 
+  //cart-modal-show&Close
+  $('#cart-show').click(function() {
+    $('#cart-modal').fadeIn();
+  });
+  $('#close-cart').click(function() {
+    $('#cart-modal').fadeOut();
+  });
+
   //function login
   $('#login-btn').click(function() {
     var name = document.getElementById('login-name').value;

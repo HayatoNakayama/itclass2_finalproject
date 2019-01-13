@@ -16,7 +16,7 @@
           <li><a href="#jump-buy">BUY</a></li>
           <li><a href="#jump-sell">Sell</a></li>
           <li><span id="rewrite"><a id="login-show">ログイン</a></span></li>
-          <li><a>買い物かご</a></li>
+          <li><a id="cart-show">買い物かご</a></li>
           <li><a href="mailto:t18590hn&#64;sfc.keio.ac.jp">お問い合わせ</a></li>
         </ul>
       </div>
@@ -39,7 +39,7 @@
             <img src="https://stockx.imgix.net/products/streetwear/Extra-Butter-The-North-Face-Nightcrawlers-Nuptse-Jacket-Multi.png?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1544487387">
             <p>Extra Butter The North Face Nightcrawlers Nuptse Jacket</p>
             <p>70,000yen</p>
-            <input type="button" class="buy_btn" value="BUY" onclick="buy1();"　alt="Extra Butter x TNF Nuptse">
+            <input type="button" class="buy_btn" value="BUY" onclick="buyProduct(0);"　alt="Extra Butter x TNF Nuptse">
           </div>
           <div class="product">
             <img src="https://stockx-360.imgix.net/Air-Jordan-1-Retro-High-Union-Los-Angeles-Black-Toe/Images/Air-Jordan-1-Retro-High-Union-Los-Angeles-Black-Toe/Lv2/img01.jpg?auto=format,compress&w=1117&q=90&updated_at=1544832311">
@@ -96,7 +96,7 @@
 
     <div class="login_form_container" id="login-modal"> <!-- login modal -->
       <div class="modal">
-        <p id="login-title">Login</p>
+        <p class="modal-title">Login</p>
         <form id="login-form">
           <p>Name</p>
           <p><input type="text" id="login-name" placeholder="Name" required></p>
@@ -104,7 +104,17 @@
           <p><input type="number" name="login-birthmonth" placeholder="Month"><input type="number" name="login-birthday" placeholder="Day"></p>
           <p><a id="login-btn" class="a_btn">Login</a></p>
         </form>
-        <p><a id="close-modal">or Do not login</a></p>
+        <p><a id="close-modal" class="close_modal">or Do not login</a></p>
+      </div>
+    </div>
+
+    <div class="cart_container" id="cart-modal"> <!-- cart -->
+      <div class="cart">
+        <p class="modal-title">cart</p>
+        <span id="cart-contents">
+          <p id="default_cart_message">カートには何も商品が入っていません</p>
+        <p><a id="checkOut" class="a_btn">Check out</a></p>
+        <p><a id="close-cart" class="a_btn close_modal">Close cart</a></p>
       </div>
     </div>
 

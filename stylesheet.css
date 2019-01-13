@@ -215,7 +215,7 @@ li {
   text-align: center;
 }
 
-#login-title {
+.modal-title {
   font-family: arial black;
   font-size: 24px;
 }
@@ -233,7 +233,7 @@ li {
   opacity: 1;
 }
 
-#close-modal {
+.close_modal {
   font-size: 13px;
   text-decoration: underline;
   cursor: pointer;
@@ -244,4 +244,41 @@ li {
   padding: 8px 28px;
   background-color: black;
   font-weight: 500;
+}
+
+.cart_container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+}
+
+.cart {
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+  background-color: #fff;
+  padding: 20px 0 40px;
+  border-radius: 5px;
+  width: 350px;
+  height: auto;
+  text-align: center;
+}
+
+#checkOut {
+  display: inline-block;
+  color: white;
+  padding: 8px 28px;
+  background-color: black;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+#default_cart_message {
+  font-family: arial;
+  font-size: 12px;
 }
