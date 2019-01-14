@@ -36,7 +36,6 @@ $(function(){
       discount += 1;
       console.log(discount);
     }
-
     $('#login-modal').fadeOut();
   });
 
