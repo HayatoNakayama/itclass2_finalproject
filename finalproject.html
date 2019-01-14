@@ -34,7 +34,7 @@
 
       <div class="buy_contents" id="jump-buy">
         <a class="contents_title">BUY</a>
-        <div class="products">
+        <div class="products" id="sell-product">
           <div class="product">
             <img src="https://stockx.imgix.net/products/streetwear/Extra-Butter-The-North-Face-Nightcrawlers-Nuptse-Jacket-Multi.png?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1544487387">
             <p>Extra Butter The North Face Nightcrawlers Nuptse Jacket</p>
@@ -73,26 +73,27 @@
           </div>
         </div>
       </div>
+
       <div class="sell_contents" id="jump-sell">
       <div class="sell_contents">
         <a class="contents_title">Sell</a>
-        <form>
+        <form onsubmit="sell()">
           <div class="sell_form">
             <div class="sell_form_left">
               <p>商品名</p>
-              <p><input type="text" placeholder="商品名(必須)" required></p>
+              <p><input type="text" placeholder="商品名(必須)" id="inputName"></p>
               <p>価格</p>
-              <p><input type="number" placeholder="価格(必須)" required></p>
+              <p><input type="number" placeholder="価格(必須)" id="inputPrice"></p>
             </div>
             <div class="sell_form_right">
               <p>商品画像</p>
-              <input type="file" required>
-              <a id="exhibit_btn" class="a_btn">出品</a>
+              <input type="file" id="input_file" class="btn" accept="image/*">
+              <input type="submit" id="exhibit_btn" class="a_btn" value="出品"></input>
             </div>
           </div>
         </form>
       </div>
-    </div>
+      </div>
 
     <div class="store_contents" id="jump-store">
       <a class="contents_title">Store</a>
