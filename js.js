@@ -51,6 +51,7 @@ function buyProduct(num) {
   }
 }
 
+//画像の読み込み
 var img = new Image();
 
 function onFileSelected(){
@@ -88,6 +89,7 @@ function createImageData(img){
    return data;
 }
 
+//出品
 function sell() {
   var file = 0;
   var reader = 0;
