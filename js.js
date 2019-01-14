@@ -9,7 +9,7 @@ var products = [
 
 var cart = [];
 var productNumber = 6;
-var imgDataContainer = [];
+var imgDataContainer = []; //save imges
 var imgNumber = 0;
 
 class Buy {
@@ -41,7 +41,12 @@ function buyProduct(num) {
     for (var i = 0; i < cart.length; i++) {
       subtotal += cart[i].price;
     }
-    total = Math.round(subtotal * 1.08);
+    if (discount === 1) {
+      var discounted_total = subtotal * 0.9;
+      total = Math.round(discounted_total * 1.08);
+    }else {
+      total = Math.round(subtotal * 1.08);
+    }
     $('#sum-cart').html('<div class="sum-cart"><p>小計: ¥' + subtotal + '</p><p>合計: ¥' + total +'</p></div>');
   }
 }
@@ -93,5 +98,7 @@ function sell() {
   $('#sell-product').append('<div class="product"><canvas id="test_canvas_'+ imgNumber + '" width=256 height=256></canvas><p>' + sellName + '</p><p>' + sellPrice +'yen</p><input type="button" class="buy_btn" value="BUY" onclick="buyProduct(' + productNumber +');"></div>');
   productNumber += 1;
   imgNumber += 1;
-  console.log(imgDataContainer);
+  var new_product_info = {name: sellName, price: sellPrice};
+  products.push(new_product_info);
+  document.sellform.reset();
 }

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Save X(仮)</title>
+    <script type="text/javascript">var discount = 0;</script>
     <script type="text/javascript" src="js.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -13,7 +14,7 @@
       <div class="page_title"><a id="headerLogo" href="#jump-top">Save X</a></div>
       <div class="list">
         <ul>
-          <li><a href="#jump-buy">BUY</a></li>
+          <li><a href="#jump-buy">Buy</a></li>
           <li><a href="#jump-sell">Sell</a></li>
           <li><span id="rewrite"><a id="login-show">Login</a></span></li>
           <li><a id="cart-show">Cart</a></li>
@@ -33,7 +34,7 @@
       </div>
 
       <div class="buy_contents" id="jump-buy">
-        <a class="contents_title">BUY</a>
+        <a class="contents_title">Buy</a>
         <div class="products" id="sell-product">
           <div class="product">
             <img src="https://stockx.imgix.net/products/streetwear/Extra-Butter-The-North-Face-Nightcrawlers-Nuptse-Jacket-Multi.png?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1544487387">
@@ -77,13 +78,13 @@
       <div class="sell_contents" id="jump-sell">
       <div class="sell_contents">
         <a class="contents_title">Sell</a>
-        <form onsubmit="sell()">
+        <form onsubmit="sell()" name="sellform">
           <div class="sell_form">
             <div class="sell_form_left">
               <p>商品名</p>
-              <p><input type="text" placeholder="商品名(必須)" id="inputName"></p>
+              <p><input type="text" placeholder="商品名(必須)" id="inputName" required></p>
               <p>価格</p>
-              <p><input type="number" placeholder="価格(必須)" id="inputPrice"></p>
+              <p><input type="number" placeholder="価格(必須)" id="inputPrice" required></p>
             </div>
             <div class="sell_form_right">
               <p>商品画像</p>

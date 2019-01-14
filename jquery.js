@@ -32,7 +32,9 @@ $(function(){
     var valbirthmonth = $('#login-form [name=login-birthmonth]').val();
     var birthmonth = Number(valbirthmonth) || 0;
     if(birthmonth == month && birthday == day) {
-      alert('お誕生日おめでとうございます！');
+      alert('お誕生日おめでとうございます！(本日、本体価格から10%OFF!!!)');
+      discount += 1;
+      console.log(discount);
     }
 
     $('#login-modal').fadeOut();
